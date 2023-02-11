@@ -1,0 +1,226 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-sobre {
+    flex: 1.4;
+    padding: 2rem 4rem;
+}
+
+.sobre-topo {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-topo img {
+    height: 50px;
+    margin-right: 0.6rem;
+}
+
+.sobre-paragrafo {
+    text-transform: uppercase;
+    color:#0075ff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-titulo {
+    font-size: 2.4rem;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+.sobre-data {
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.sobre-explicacao {
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+}
+
+.sobre-palestrantes {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.palestrantes-infos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.palestrante {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+}
+
+.palestrante-img {
+    width:120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.palestrante-nome {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.palestrante-cargo {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.div-form {
+    flex: 1;
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    color: #fff;
+}
+
+.form-infos {
+    margin: 3rem;
+    padding: 3rem;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-paragrafo {
+    margin-bottom: 1rem;
+}
+
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-nomes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-registro input {
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#email {
+    min-width: 100%;
+}
+
+.form-registro input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form-registro input[type="submit"]:hover {
+    background-color: #fff;
+    color: #0075ff;
+}
+
+.form-beneficios {
+    text-align: left;
+    align-self: start;
+}
+
+#beneficios-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.form-beneficios ul {
+    list-style-position: inside;
+}
+
+.form-beneficios li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 450px) {
+    body {
+        flex-direction: column;
+    }
+
+    .div-sobre {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    .sobre-titulo {
+        font-size: 3rem;
+    }
+
+    .sobre-paragrafo, .sobre-data {
+        font-size: 1.4rem;
+    }
+
+    .sobre-explicacao {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .palestrantes-infos {
+        flex-direction: column;
+    }
+
+    .palestrante {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .palestrante-img {
+        width: 180px;
+    }
+
+    .palestrante-nome {
+        font-size: 1.6rem;
+    }
+
+    .palestrante-cargo {
+        font-size: 1.4rem;
+    }
+
+    .form-infos {
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    .form-registro, .form-nomes {
+        gap: 1rem;
+    }
+
+}
